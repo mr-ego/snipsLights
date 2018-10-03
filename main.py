@@ -3,7 +3,7 @@ from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 ​
 def intent_received(hermes, intent_message):
-    result_sentence = "hello in this lonely beach"
+    result_sentence = "hello in this lonely dog"
     hermes.publish_end_session(intent_message.session_id, result_sentence)
 
 with Hermes('localhost:1883') as h:
